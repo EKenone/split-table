@@ -1,0 +1,13 @@
+mysql:
+  sale:
+    host: 192.168.2.240
+    port: 5306
+    user: root
+    pass: allen123hjmHJM
+    db: cst_sale
+  common:
+    host: 192.168.2.240
+    port: 5306
+    user: root
+    pass: allen123hjmHJM
+    db: cst_common
