@@ -39,9 +39,9 @@ func (s *Split) SyncData(sp SpInterface) error {
 func (s *Split) db() *gorm.DB {
 	var db *gorm.DB
 	switch s.DbName {
-	case "common":
+	case conf.CommonDbName:
 		db = conf.CommonLink()
-	case "sale":
+	case conf.SaleDbName:
 		db = conf.SaleLink()
 	}
 	return db
