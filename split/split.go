@@ -69,7 +69,7 @@ func (s *Split) tableDesc() (map[string]string, int, error) {
 		return fieldType, 0, errors.New("不需要同步数据")
 	}
 
-	db.Debug().Raw("DESC " + table).Scan(&st)
+	db.Raw("DESC " + table).Scan(&st)
 
 	for _, v := range st {
 		ty := "string"
