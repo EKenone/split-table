@@ -22,7 +22,7 @@ func init() {
 }
 
 func main() {
-	log.Println(11)
+	log.Println("开始")
 	flag.Parse()
 	if err := conf.Init(); err != nil {
 		log.Panic(err)
@@ -47,5 +47,5 @@ func main() {
 	if err != nil {
 		log.Panicln(err)
 	}
-	log.Println(22)
+	log.Println("结束")
 }
